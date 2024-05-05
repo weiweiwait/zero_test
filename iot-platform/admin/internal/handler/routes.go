@@ -14,8 +14,8 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 		[]rest.Route{
 			{
 				Method:  http.MethodGet,
-				Path:    "/from/:name",
-				Handler: AdminHandler(serverCtx),
+				Path:    "/device/list",
+				Handler: DeviceListHandler(serverCtx),
 			},
 		},
 	)

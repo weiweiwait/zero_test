@@ -1,8 +1,6 @@
 package svc
 
-import (
-	"iot-platform/admin/internal/config"
-)
+import "iot-platform/user/rpc/internal/config"
 
 type ServiceContext struct {
 	Config config.Config
